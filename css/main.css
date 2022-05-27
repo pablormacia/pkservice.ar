@@ -1,0 +1,113 @@
+/*Reset*/
+
+html, body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size:14px;
+    font-family: 'Rajdhani', sans-serif;
+    color: #FFF;
+}
+
+ul{
+    list-style: none;
+}
+
+/*Colores
+#9B94FF #94C1FF #99F7FF #D194FF #2F2F2F
+#D2CFFF #CFFDD2 #FFD2CF
+*/
+
+
+:root{
+    --dark-color: #2F2F2F;
+    --main-color: #D194FF;
+    --secondary-color: #94C1FF;
+}
+
+.main-bg-color{
+    background-color: var(--main-color);
+}
+
+.main-color{
+    color: var(--main-color)
+}
+
+.main-secondary-color{
+    background-color: var(--secondary-color);
+}
+
+.secondary-color{
+    color: var(--secondary-color);
+}
+
+
+#particles-js{
+    background-color: var(--dark-color);
+    height: 100vh;
+    width: 100vw;
+    position:fixed;
+    z-index:-1;
+}
+
+.main{
+    height: 100%;
+    position:relative;
+}
+
+
+.boxes{
+    position:absolute;
+    max-width: 1200px;
+    display:flex;
+    flex-wrap: wrap;
+    top: 3rem;
+    left:0;
+    right: 0;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.box{
+    position:relative;
+    width: 48%;
+    height: 40vh;
+    margin: .2rem;
+    padding-left: 1rem;
+    background-color: rgba(255, 210, 207, .15);   
+    backdrop-filter: blur(5px);
+}
+
+.box:hover{
+    background-color: rgba(207, 253, 210, .15); 
+}
+
+#main-img{
+    position:absolute;
+    width: 300px;
+    left:-150px;
+    top: -146px;
+}
+
+#main-img:hover{
+    transform: scale(1.5);
+    transition:all .5s ease-in-out;
+}
+
+#main-img img{
+    width: 100%;
+}
+
+
+.logo{
+    width:200px;
+    position:absolute;
+    left:0;
+    right: 0;
+    padding: 1rem;
+    margin:auto;
+}
+
+.logo img{
+    width: 100%;
+}
