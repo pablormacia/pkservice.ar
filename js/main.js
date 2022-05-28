@@ -11,7 +11,7 @@ let box3 = document.querySelector("#box3");
 
 box1.addEventListener("mouseover",function(e){
   console.log(img.src)
-  img.src="assets/img/box1.gif"
+  img.src="assets/img/box1.png"
 });
 
 box2.addEventListener("mouseover",function(e){
