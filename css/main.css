@@ -23,6 +23,7 @@ ul{
     --dark-color: #2F2F2F;
     --main-color: #D194FF;
     --secondary-color: #94C1FF;
+    --terciary-color: #FFD2CF;
 }
 
 .main-bg-color{
@@ -39,6 +40,18 @@ ul{
 
 .secondary-color{
     color: var(--secondary-color);
+}
+
+.main-terciary-color{
+    background-color: var(--terciary-color);
+}
+
+.terciary-color{
+    color: var(--terciary-color);
+}
+
+.only-in-mobile{
+    display:none;
 }
 
 
@@ -82,6 +95,15 @@ ul{
     background-color: rgba(207, 253, 210, .15); 
 }
 
+#box2 section{
+    padding-left: 50%;
+}
+
+#box4{
+    text-align: end;
+}
+
+
 #main-img{
     position:absolute;
     width: 300px;
@@ -90,7 +112,7 @@ ul{
 }
 
 #main-img:hover{
-    transform: scale(1.5);
+    transform: scale(1.4);
     transition:all .5s ease-in-out;
 }
 
@@ -111,3 +133,115 @@ ul{
 .logo img{
     width: 100%;
 }
+
+.footer{
+    position:fixed;
+    bottom:10px;
+    width: 70px;
+    right: 50px;
+    font-size: 2rem;
+}
+
+.footer a{
+    text-decoration: none;
+    color: var(--terciary-color)
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 68%;
+    text-align: right;
+    margin-left: 30%;
+}
+
+.form input, .form textarea{
+    border:none;
+    padding: 1rem;
+    margin-top:.5rem;
+    background-color: rgba(255,255,255,0.5);
+    text-align: right;
+}
+
+.form button{
+    padding: .5rem;
+    margin-top:.5rem;
+    background-color: var(--dark-color);
+    border:none;
+    border-radius: 0 0 .5rem .5rem ;
+    color:#FFF;
+}
+
+::placeholder{
+    color:#FFF;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus, textarea:focus{
+    border:none;
+}
+
+
+@media (max-width: 1180px) {
+
+    .box{
+        width: 45%;
+    }
+
+    #main-img{
+        position:absolute;
+        width: 200px;
+        left:-110px;
+        top: -120px;
+    }
+    
+  }
+
+@media (max-width: 720px) {
+    .boxes{
+        width: 100%;
+    }
+
+    .box{
+        width: 100%;
+        text-align: left !important;
+    }
+
+    #box2 section{
+        padding-left: 0;
+    }
+
+    .form{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form input, .form textarea{
+        text-align: left;
+    }
+
+     .footer{
+        bottom:.1rem;
+        right: .3rem;;
+     }   
+
+
+    .only-in-mobile{
+        display:block;
+    }
+
+    .only-in-desktop{
+        display:none;
+    }
+
+    .banner-right{
+        position:fixed;
+
+    }
+
+    
+  }
